@@ -1,0 +1,49 @@
+#dot {
+  width: 0px;
+  height: 0px;
+  border-right: 60px solid transparent;
+  border-top: 60px solid blue;
+  border-left: 60px solid blue;
+  border-bottom: 60px solid blue;
+  border-top-left-radius: 60px;
+  border-top-right-radius: 60px;
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+  animation: dot .4s infinite;
+  transition:width height ;
+}
+#dot:hover{
+  transform: rotateY(150deg);
+}
+@keyframes dot {
+  0% {
+    left: 200px;
+    border-right: 60px solid transparent;
+  }
+  60% {
+    border-right: 55px solid transparent;
+    left: 0px; }
+  }
+  
+
+#blue-bolt {
+  height: 100%;
+  width: 100%;
+  z-index: -2;
+  background-size: cover;
+  position:absolute;
+  
+}
+#h1{
+   color: #b38600;
+    background-color:#004d99;
+    background-image: linear-gradient(to right, blue, skyblue);
+    box-shadow: 10px 10px;
+    text-align: center;
+    border: 10px solid;
+    border-image: url(electric.jpg) 30 round;
+  
+}
+#h1:hover{
+  width:150px;
+}
